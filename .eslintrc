@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "standard",
+    "plugin:unicorn/recommended",
+    "plugin:svelte/recommended"
+  ]
+}

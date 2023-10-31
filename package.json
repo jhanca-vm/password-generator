@@ -1,0 +1,28 @@
+{
+  "name": "password-generator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fontsource/jetbrains-mono": "^5.0.17",
+    "generate-password-browser": "^1.1.0"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^2.0.3",
+    "@sveltejs/kit": "^1.20.4",
+    "@unocss/extractor-svelte": "^0.57.1",
+    "eslint": "^8.52.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-svelte": "^2.34.0",
+    "eslint-plugin-unicorn": "^49.0.0",
+    "svelte": "^4.0.5",
+    "typescript": "^5.2.2",
+    "unocss": "^0.57.1",
+    "vite": "^4.4.2"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["ES2022", "DOM"],
+    "jsx": "react-jsx",
+    "target": "ES2022",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": ["node", "@rsbuild/core/types", "@testing-library/jest-dom"],
+    "useDefineForClassFields": true,
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@fonts/*": ["./node_modules/@fontsource/jetbrains-mono/files/*"]
+    }
+  },
+  "include": ["src"]
+}

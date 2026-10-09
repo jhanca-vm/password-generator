@@ -1,0 +1,44 @@
+@import 'tailwindcss' source('../');
+
+@theme {
+  --color-gray-200: oklch(0.9241 0.0068 295.44);
+  --color-gray-500: oklch(0.6004 0.0319 294.15);
+  --color-gray-600: oklch(0.446 0.013 291.61);
+  --color-gray-700: oklch(0.2611 0.0167 290.28);
+  --color-gray-800: oklch(0.2095 0.0157 290.7);
+  --color-gray-900: oklch(0.1918 0.0161 290.52);
+  --color-gray-950: oklch(0.1323 0.0096 297.64);
+  --color-green-200: oklch(0.9229 0.1391 147.26);
+  --color-orange-400: oklch(0.7262 0.1637 36.7);
+  --color-red-500: oklch(0.6549 0.2088 25.04);
+  --color-yellow-300: oklch(0.8657 0.1312 86.94);
+  --default-font-family: 'JetBrains Mono';
+  --text-3xl: 2rem;
+  --text-3xl--line-height: 1.3125;
+  --text-lg--line-height: calc(2 / 1.5);
+}
+
+@layer base {
+  input[type='checkbox']:checked {
+    background-image: url(../icons/check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@utility range-progress-* {
+  &::-webkit-slider-thumb {
+    box-shadow: -16rem 0 0 16rem --value(--color-*);
+  }
+}
+
+@custom-variant range-thumb {
+  &::-webkit-slider-thumb {
+    @slot;
+  }
+
+  &::-moz-range-thumb {
+    @slot;
+  }
+}

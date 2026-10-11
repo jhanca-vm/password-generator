@@ -1,7 +1,7 @@
 import type { RouteHandlerMethod } from 'fastify'
 import { renderToStaticMarkup } from 'react-dom/server'
 
-import HomePage from './page'
+import HomePage from '../ui/home'
 
 const html = renderToStaticMarkup(<HomePage />)
 

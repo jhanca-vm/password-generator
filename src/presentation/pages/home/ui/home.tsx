@@ -1,7 +1,7 @@
 import { renderToString } from 'react-dom/server'
 
-import PasswordForm from '@/ui/islands/password-form'
-import RootLayout from '@/ui/layout'
+import { PasswordForm } from '@/presentation/features/generate-password'
+import RootLayout from '@/presentation/shared/ui/layout'
 
 export default function HomePage() {
   return (

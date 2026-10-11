@@ -6,8 +6,7 @@ import type {
   CharacterTypes,
   PasswordRules
 } from '@/core/password/domain/types'
-
-import trpc from '../lib/trpc/client'
+import trpc from '@/presentation/shared/api/trpc/client'
 
 interface State extends PasswordRules {
   password: string | null

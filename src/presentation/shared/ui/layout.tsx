@@ -5,8 +5,8 @@ import jetbrainsMonoBold from '@fonts/jetbrains-mono-latin-700-normal.woff2'
 import clsx from 'clsx/lite'
 import type { ReactNode } from 'react'
 
-import fonts from './styles/fonts.css?inline'
-import tailwind from './styles/tailwind.css?url'
+import fonts from '../theme/fonts.css?inline'
+import tailwind from '../theme/tailwind.css?url'
 
 interface Props {
   withIslands?: boolean

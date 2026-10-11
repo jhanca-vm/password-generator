@@ -3,9 +3,9 @@ import * as v from 'valibot'
 import generatePassword from '@/core/password/application/generate'
 import { PASSWORD_LENGTH } from '@/core/password/domain/constants'
 import passwordGenerator from '@/core/password/infrastructure/generator'
-import { procedure, router } from '@/ui/lib/trpc/server'
+import { procedure, router } from '@/presentation/shared/api/trpc/server'
 
-const passwordRouter = router({
+export const passwordRouter = router({
   generate: procedure
     .input(
       v.object({
@@ -22,5 +22,3 @@ const passwordRouter = router({
     )
     .mutation(({ input }) => generatePassword(passwordGenerator, input))
 })
-
-export default passwordRouter

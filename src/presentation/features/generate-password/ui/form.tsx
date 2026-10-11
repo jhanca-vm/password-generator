@@ -1,14 +1,14 @@
 import clsx from 'clsx/lite'
 
 import { PASSWORD_LENGTH } from '@/core/password/domain/constants'
+import useClipboard from '@/presentation/shared/lib/clipboard/use-clipboard'
+import Checkbox from '@/presentation/shared/ui/checkbox'
+import IconArrow from '@/presentation/shared/ui/icons/arrow.svg'
+import IconCopy from '@/presentation/shared/ui/icons/copy.svg'
+import Meter from '@/presentation/shared/ui/meter'
+import Range from '@/presentation/shared/ui/range'
 
-import Checkbox from '../components/checkbox'
-import Meter from '../components/meter'
-import Range from '../components/range'
-import useClipboard from '../hooks/use-clipboard'
-import usePasswordForm from '../hooks/use-password-form'
-import IconArrow from '../icons/arrow.svg'
-import IconCopy from '../icons/copy.svg'
+import usePasswordForm from '../model/use-form'
 
 export default function PasswordForm() {
   const {

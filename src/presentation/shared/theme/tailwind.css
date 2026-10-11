@@ -1,4 +1,4 @@
-@import 'tailwindcss' source('../');
+@import 'tailwindcss' source('../../');
 
 @theme {
   --color-gray-200: oklch(0.9241 0.0068 295.44);
@@ -20,7 +20,7 @@
 
 @layer base {
   input[type='checkbox']:checked {
-    background-image: url(../icons/check.svg);
+    background-image: url(../ui/icons/check.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;

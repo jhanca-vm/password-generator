@@ -1,4 +1,4 @@
-import type { Result } from '@/shared/types'
+import type { Result } from '@/common/types'
 
 import { PASSWORD_LENGTH } from '../domain/constants'
 import type { PasswordValidationError } from '../domain/errors'

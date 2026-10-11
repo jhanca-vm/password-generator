@@ -1,7 +1,7 @@
 import { expect, it, rs } from '@rstest/core'
 import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 
-import PasswordForm from './password-form'
+import PasswordForm from './form'
 
 rs.mock('../lib/trpc/client', () => ({
   default: {

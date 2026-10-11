@@ -17,7 +17,7 @@ export default defineConfig({
       plugins: [pluginTailwindcss()],
       output: {
         autoExternal: true,
-        copy: [{ from: './src/ui/favicon.svg' }],
+        copy: [{ from: './src/presentation/app/favicon.svg' }],
         filenameHash: isProd,
         filename: {
           css({ chunk }) {
@@ -33,7 +33,9 @@ export default defineConfig({
       }
     },
     web: {
-      source: { entry: { 'island-react': './src/ui/islands/index.tsx' } },
+      source: {
+        entry: { 'island-react': './src/presentation/app/islands.tsx' }
+      },
       output: { manifest: true, module: true },
       tools: { htmlPlugin: false }
     }

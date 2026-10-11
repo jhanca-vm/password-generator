@@ -4,8 +4,8 @@ import fastifyStatic from '@fastify/static'
 import { fastifyTRPCPlugin } from '@trpc/server/adapters/fastify'
 import fastify from 'fastify'
 
-import routes from './ui/routes'
-import { appRouter } from './ui/routes/trpc'
+import router from './presentation/app/router'
+import routes from './presentation/app/routes'
 
 const server = fastify({
   logger: { transport: { target: '@fastify/one-line-logger' } }
@@ -16,10 +16,7 @@ server.register(fastifyStatic, {
   prefix: '/static'
 })
 
-server.register(fastifyTRPCPlugin, {
-  prefix: '/trpc',
-  trpcOptions: { router: appRouter }
-})
+server.register(fastifyTRPCPlugin, { prefix: '/trpc', trpcOptions: { router } })
 
 server.register(routes)
 

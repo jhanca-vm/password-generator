@@ -1,2 +1,5 @@
-node_modules/
-dist/
+web/node_modules
+web/pnpm-lock.yaml
+api/dist
+api/tmp
+bin

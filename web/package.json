@@ -1,0 +1,30 @@
+{
+  "type": "module",
+  "scripts": {
+    "build": "rsbuild build",
+    "check": "biome check",
+    "dev": "rsbuild build -m development -w",
+    "test": "rstest"
+  },
+  "dependencies": {
+    "@fontsource/jetbrains-mono": "5.3.0",
+    "clsx": "2.1.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.6.8",
+    "@rsbuild/core": "2.3.3",
+    "@rsbuild/plugin-react": "2.1.1",
+    "@rsbuild/plugin-svgr": "2.0.5",
+    "@rsbuild/plugin-tailwindcss": "2.0.3",
+    "@rstest/core": "0.12.6",
+    "@testing-library/jest-dom": "8.0.0",
+    "@testing-library/react": "16.3.3",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "happy-dom": "21.0.4",
+    "tailwindcss": "4.3.5"
+  }
+}

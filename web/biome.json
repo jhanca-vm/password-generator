@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "files": { "includes": ["**", "!**/*.svg"] },
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true,
+    "root": "../"
+  },
+  "linter": { "rules": { "security": { "noDangerouslySetInnerHtml": "off" } } },
+  "assist": { "actions": { "source": { "useSortedPackageJson": "on" } } },
+  "formatter": { "indentStyle": "space" },
+  "tailwind": { "stylesheet": "./src/styles/tailwind.css" },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "trailingCommas": "none",
+      "semicolons": "asNeeded"
+    }
+  },
+  "css": { "formatter": { "quoteStyle": "single" } }
+}

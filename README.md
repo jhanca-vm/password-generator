@@ -1,42 +1,51 @@
 # Password Generator
 
-A secure, type-safe, and customizable password generator built with a modular,
-domain-driven architecture.
+A modern, cryptographically secure password generator built with Go and React.
 
-## Setup
+## 🎯 Overview
 
-Install the dependencies:
+This project demonstrates expertise in building production-ready applications
+with modern web technologies, focusing on security, performance, and clean
+architecture.
 
-```bash
-pnpm install
+## 🛠 Tech Stack
+
+**Backend**
+
+- Go 1.24+ with `net/http` (standard library, no frameworks)
+- Cryptographic security: `crypto/rand` + `math/rand/v2` (ChaCha8)
+- Embedded static files with `go:embed` for single-binary deployment
+
+**Frontend**
+
+- React 19 with selective hydration
+- Rsbuild (Rspack v2) for blazing-fast builds
+- Tailwind CSS v4 for zero-runtime styling
+- Biome for linting and formatting
+
+## ✨ Features
+
+- **Customizable password generation** (4-64 characters)
+- **Character set selection**: uppercase, lowercase, numbers, symbols
+- **Real-time security meter** with visual feedback
+- **One-click copy** to clipboard with accessible confirmation
+
+## 🚀 Getting Started
+
+**Prerequisites**: ensure you have Go 1.24+, Node.js 20+, pnpm 9+, and `make`
+installed.
+
+**Install dependencies**
+
+```sh
+pnpm -C web install
 ```
 
-## Get started
+**Start the development server**
 
-Start the dev server, and the app will be available at
+```sh
+make dev
+```
+
+The application will be available at
 [http://localhost:3000](http://localhost:3000).
-
-```bash
-npm run dev
-```
-
-Build the app for production:
-
-```bash
-npm run build
-```
-
-Start the app in production mode:
-
-```bash
-npm start
-```
-
-## Testing
-
-The project is thoroughly tested across all architectural layers using a modern
-testing stack. Run the test suite with:
-
-```bash
-npm test
-```
